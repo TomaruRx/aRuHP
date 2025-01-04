@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # デプロイするブランチ名を指定（例: main）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリをクローン
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 必要ならビルドプロセスを追加
+      # （例えば、JekyllやReactのプロジェクトの場合）
+      # - name: Build project
+      #   run: npm install && npm run build
+
+      # GitHub Pagesへデプロイ
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # 公開したいディレクトリ（静的HTMLファイルの場所）

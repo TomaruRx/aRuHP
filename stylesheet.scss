@@ -1,10 +1,11 @@
 body{
     font-family:"美咲ゴシック",sans-serif;
+    padding-left:10px;
 }
 .header-group{
     margin: 20px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f8ad14;
 
     h1{
@@ -21,10 +22,10 @@ body{
         color:#f8f8f8;
     }
 }
-.button {
+.button_t1 {
     text-decoration: none; 
     display: inline-block;
-    padding: 8px 24px;
+    padding: 8px 10px;
     color: white;
     opacity: 0.8;
     border-radius: 4px;
@@ -43,7 +44,38 @@ body{
     }
 }
 .row{
-    p{
-        font-weight:bold;
+    img{
+        border-radius: 20px;
+        padding-left: 0px;
+    }
+}
+.blog_content{
+    font-weight:bold;
+}
+//.header-image{
+    //border-radius: 10px;
+//}
+.icon-image{
+    border-radius: 10px;
+}
+.button_t2{
+    text-decoration: none; 
+    display: inline-block;
+    padding: 8px 10px;
+    color: white;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #f8ad14;
+    cursor: pointer;
+    box-shadow: 0 5px #f88214;
+
+    &:hovor{
+      opacity: 1;
+    }
+    
+    &:active{
+      position: relative;
+      top: 7px;
+      box-shadow: none;
     }
 }

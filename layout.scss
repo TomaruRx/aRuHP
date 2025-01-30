@@ -1,0 +1,32 @@
+body {
+    font-size: 18px; /* デフォルト（PC用） */
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px; /* スマホ用 */
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* 画面が狭いとき折り返し */
+    gap: 10px; /* 要素の間隔 */
+  }
+  
+  .item {
+    width: 200px;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .item {
+      width: 100%; /* スマホでは横幅を100%に */
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+    

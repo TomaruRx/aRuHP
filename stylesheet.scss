@@ -1,0 +1,49 @@
+body{
+    font-family:"美咲ゴシック",sans-serif;
+}
+.header-group{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8ad14;
+
+    h1{
+        font-weight:bold;
+        color:#f8f8f8;
+        font-size:34px;
+    }
+    p1{
+        font-weight:bold;
+        color:#f8f8f8;
+    }
+    p2{
+        font-weight:bold;
+        color:#f8f8f8;
+    }
+}
+.button {
+    text-decoration: none; 
+    display: inline-block;
+    padding: 8px 24px;
+    color: white;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #f8ad14;
+    cursor: pointer;
+    box-shadow: 0 5px #f88214;
+
+    &:hovor{
+      opacity: 1;
+    }
+    
+    &:active{
+      position: relative;
+      top: 7px;
+      box-shadow: none;
+    }
+}
+.row{
+    p{
+        font-weight:bold;
+    }
+}

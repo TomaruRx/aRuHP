@@ -79,3 +79,27 @@ body{
       box-shadow: none;
     }
 }
+.ref-button {
+    text-decoration: none; 
+    display: inline-block;
+    padding: 8px 10px;
+    color: white;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #f8ad14;
+    cursor: pointer;
+    box-shadow: 0 5px #f88214;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 20px 0;
+
+    &:hover {
+      opacity: 1;
+      background: #f88214;
+    }
+    &:active {
+      position: relative;
+      top: 7px;
+      box-shadow: none;
+    }
+}
